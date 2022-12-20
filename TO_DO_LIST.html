@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="todoliststyle.css">
+    <script src="./todo.js"></script>
+    <title>TO_DO_LIST</title>
+</head>
+<body >
+    <div id="root" class="root_UMV">
+        <div id="clock_content" class="clock_content_UMV">
+        <div id="curr_time" class="curr_time_UMV">
+        </div>
+        <div id="set_todo" class="set_todo_UMV">
+            <div id="clock_content" style="background-color: rgba(0, 255, 0, 0); height: 40%; width: 79%; border: 0px solid black; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row;" class="clock_content_UMV clock_content_UMV clock_content_UMV clock_content_UMV clock_content_UMV clock_content_UMV clock_content_UMV clock_content_UMV"><select id="hour_slc" style="width: 27%; height: 73%;" class="hour_slc_UMV hour_slc_UMV hour_slc_UMV hour_slc_UMV hour_slc_UMV hour_slc_UMV hour_slc_UMV hour_slc_UMV"><option id="" value="12">12</option><option id="" value="11">11</option><option id="" value="10">10</option><option id="" value="9">9</option><option id="" value="8">8</option><option id="" value="7">7</option><option id="" value="6">6</option><option id="" value="5">5</option><option id="" value="4">4</option><option id="" value="3">3</option><option id="" value="2">2</option><option id="" value="1">1</option></select><select id="min_slc" style="width: 27%; height: 73%;"><option id="" value="59">59</option><option id="" value="58">58</option><option id="" value="57">57</option><option id="" value="56">56</option><option id="" value="55">55</option><option id="" value="54">54</option><option id="" value="53">53</option><option id="" value="52">52</option><option id="" value="51">51</option><option id="" value="50">50</option><option id="" value="49">49</option><option id="" value="48">48</option><option id="" value="47">47</option><option id="" value="46">46</option><option id="" value="45">45</option><option id="" value="44">44</option><option id="" value="43">43</option><option id="" value="42">42</option><option id="" value="41">41</option><option id="" value="40">40</option><option id="" value="39">39</option><option id="" value="38">38</option>
+                
+                <option id="" value="37">37</option>
+                <option id="" value="36">36</option>
+                <option id="" value="35">35</option>
+                <option id="" value="34">34</option>
+                <option id="" value="33">33</option>
+                <option id="" value="32">32</option>
+                <option id="" value="31">31</option>
+                <option id="" value="30">30</option>
+                <option id="" value="29">29</option>
+                <option id="" value="28">28</option>
+                <option id="" value="27">27</option>
+                <option id="" value="26">26</option>
+                <option id="" value="25">25</option>
+                <option id="" value="24">24</option>
+                <option id="" value="23">23</option>
+                <option id="" value="22">22</option>
+                <option id="" value="21">21</option>
+                <option id="" value="20">20</option>
+                <option id="" value="19">19</option>
+                <option id="" value="18">18</option>
+                <option id="" value="17">17</option>
+                <option id="" value="16">16</option>
+                <option id="" value="15">15</option>
+                <option id="" value="14">14</option>
+                <option id="" value="13">13</option>
+                <option id="" value="12">12</option>
+                <option id="" value="11">11</option>
+                <option id="" value="10">10</option>
+                <option id="" value="09">09</option>
+                <option id="" value="08">08</option>
+                <option id="" value="07">07</option>
+                <option id="" value="06">06</option>
+                <option id="" value="05">05</option>
+                <option id="" value="04">04</option>
+                <option id="" value="03">03</option>
+                <option id="" value="02">02</option>
+                <option id="" value="01">01</option>
+                <option id="" value="00">00</option></select><select id="ampm" style="width: 27%; height: 73%;"><option id="" value="AM">AM</option><option id="" value="PM">PM</option></select>
+            </div>
+            <input id="add_note" placeholder="Type note here........" type="text" style="background-color: white; height: 18%; width: 77%;display: flex; flex-direction: row;justify-content: center;align-items: center;">
+            <div id="add_todo" class="add_todo_UMV">
+        
+        <div id="add_button" class="add_button_UMV">
+            
+        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+        
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        
+        <svg version="1.1" id="svgidNoum_0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 488.8 488.8" style="width:100%;height:100%;enable-background:new 0 0 488.8 488.8;" onclick="create_TODO()" xml:space="preserve">
+        
+        <g>
+        
+            <g>
+        
+                <path style="fill:#2C2F33;" d="M488.8,383V9.9c0-5.5-4.4-9.9-9.9-9.9H105.8c-5.5,0-9.9,4.4-9.9,9.9V383c0,5.5,4.4,9.9,9.9,9.9
+                    h373.1C484.4,392.9,488.8,388.5,488.8,383z M469,373.1H115.7V19.8H469V373.1L469,373.1z">
+        </path>
+        
+                <path style="fill:#2C2F33;" d="M9.9,488.8H383c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9H19.8V105.8c0-5.5-4.4-9.9-9.9-9.9
+                    S0,100.3,0,105.8v373.1C0,484.4,4.4,488.8,9.9,488.8z">
+        </path>
+        
+                <path style="fill:#3C92CA;" d="M211.8,206.3h70.7V277c0,5.5,4.4,9.9,9.9,9.9s9.9-4.4,9.9-9.9v-70.7H373c5.5,0,9.9-4.4,9.9-9.9
+                    s-4.4-9.9-9.9-9.9h-70.7v-70.7c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v70.7h-70.7c-5.5,0-9.9,4.4-9.9,9.9
+                    S206.3,206.3,211.8,206.3z" draggable="true">
+        </path>
+        
+            </g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        <g>
+        
+        </g>
+        
+        </svg>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="list_content_par" class="list_content_par_UMV">
+            <div id="list_content" class="list_content_UMV">
+            </div>
+        </div>
+        </div>
+</body>
+</html>
